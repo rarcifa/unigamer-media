@@ -43,7 +43,10 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-source-contentful`, 
-      options: contentfulConfig,
+      options: {
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+      },
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
@@ -65,7 +68,6 @@ module.exports = {
         name: 'Gatstrap',
         short_name: 'Gatstrap',
         description: 'Gatsby starter for bootstrap a blog',
-        homepage_url: 'https://gatstrap.netlify.com',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#673ab7',
