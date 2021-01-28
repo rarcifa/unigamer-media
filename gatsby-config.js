@@ -10,6 +10,9 @@
 // https://www.contentful.com/developers/docs/references/content-preview-api/#/reference/spaces/space/get-a-space/console/js
 //
 // To change back to the normal CDA, remove the CONTENTFUL_HOST variable from your environment.
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -20,8 +23,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`, 
       options: {
-        accessToken: `JzBOKbP7puGscsYCR8AnmY6_vkAEb7HQQhTSBT9mkG8`,
-        spaceId: `p9mkyngx24ui`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
       },
     },
     `gatsby-transformer-remark`,
