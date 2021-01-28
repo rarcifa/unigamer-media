@@ -1,14 +1,3 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
-
-const contentfulConfig = {
-  forceFullSync: true,
-  spaceId: process.env.CONTENTFUL_SPACE_ID,
-  accessToken:
-    process.env.CONTENTFUL_ACCESS_TOKEN ||
-    process.env.CONTENTFUL_DELIVERY_TOKEN,
-};
 // If you want to use the preview API please define
 // CONTENTFUL_HOST and CONTENTFUL_PREVIEW_ACCESS_TOKEN in your
 // environment config.
