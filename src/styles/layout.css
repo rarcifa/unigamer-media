@@ -749,8 +749,6 @@ pre tt:after {
 .brand-img {
   width: 130px !important;
   height: 100px;
-  opacity: 41%!important;
-  filter: grayscale(1)!important;
   position: absolute;
   bottom: -135px;
   right: 42px;
