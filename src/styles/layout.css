@@ -752,6 +752,7 @@ pre tt:after {
   position: absolute;
   bottom: -135px;
   right: 42px;
+  opacity: 20%;
 }
 
 
