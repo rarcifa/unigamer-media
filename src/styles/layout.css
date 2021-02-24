@@ -1003,41 +1003,43 @@ html {
 }
 
 .btn-main {
-  color: #1fc1a7 !important;
+  color: #585757 !important;
   background-color: #fff !important;
-  border-color: #1fc1a7!important;
+  border-color: #58575700!important;
   border-radius: 9000px!important;
 }
 
 .btn-main:hover {
-  color: #fff!important;
-  background-color: #1fc1a7!important;
-  border-color: #1fc1a7!important;
+  color: #585757 !important;
+  background-color: #fff !important;
+  border-color: #585757!important;
+  border-radius: 9000px!important;
+
 }
 
 .btn-main:focus, .btn-main.focus {
   color: #fff!important;
-  background-color: #189782!important;
-  border-color: #189782!important;
-  box-shadow: 0 0 0 0.2rem #92d3c8 !important;
+  background-color: #585757!important;
+  border-color: #585757!important;
+
 }
 
 .btn-main.disabled, .btn-main:disabled {
   color: #fff!important;
-  background-color: #189782!important;
-  border-color: #189782!important;
+  background-color: #585757!important;
+  border-color: #585757!important;
 }
 
 .btn-main:not(:disabled):not(.disabled):active, .btn-main:not(:disabled):not(.disabled).active,
 .show > .btn-main.dropdown-toggle {
   color: #fff!important;
-  background-color: #92d3c8!important;
-  border-color: #92d3c8!important;
+  background-color: #585757!important;
+  border-color: #585757!important;
 }
 
 .btn-main:not(:disabled):not(.disabled):active:focus, .btn-main:not(:disabled):not(.disabled).active:focus,
 .show > .btn-main.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem #92d3c8!important;
+  box-shadow: 0 0 0 0.2rem #585757!important;
 }
 
 
@@ -1075,6 +1077,23 @@ html {
   box-shadow: 0 0 0 0.2rem #92d3c800 !important;
 }
 
+
+.btn-uni {
+  border-radius: 9000px;
+  color: #585757;
+  border: solid 2px rgba(255, 255, 255, 0);
+  background: #f4f4f4;
+}
+.btn-uni:hover {
+  border-radius: 9000px;
+  border: solid 2px;
+  color: #585757;
+  background: #f4f4f4;
+}
+
+.f-10px {
+  width: 2%;
+}
 .btn-nav:not(:disabled):not(.disabled):active:focus, .btn-nav:not(:disabled):not(.disabled).active:focus,
 .show > .btn-nav.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem #92d3c800!important;

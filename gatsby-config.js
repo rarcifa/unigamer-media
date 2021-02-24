@@ -13,6 +13,20 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
+
+/*const contentfulConfig = {
+  forceFullSync: true,
+  spaceId: process.env.CONTENTFUL_SPACE_ID,
+  accessToken:
+    process.env.CONTENTFUL_ACCESS_TOKEN ||
+    process.env.CONTENTFUL_DELIVERY_TOKEN,
+};
+
+if (process.env.CONTENTFUL_HOST) {
+  contentfulConfig.host = process.env.CONTENTFUL_HOST;
+  contentfulConfig.accessToken = process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN;
+}*/
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
