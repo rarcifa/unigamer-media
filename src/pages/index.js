@@ -85,13 +85,13 @@ const IndexPage = props => {
                   {/* Post Block */}
                   <div className="col-12">
                     {/* Post Author Top */}
-                    <Link to="www.unigamer.com" className="text-bold text-white">{data.firstSection[0].reference.author.name}</Link>
+                    <Link to="https://www.unigamer.com" className="text-bold text-white">{data.firstSection[0].reference.author.name}</Link>
                     <span className="float-right text-bold">{data.firstSection[0].reference.publicationDate}</span>
                     <div className="mt-n1">@{data.firstSection[0].reference.author.slug}</div>
                     <div className="h4 pt-3 pb-2 pr-3 text-white">
                       {/* Post Content */}
                       {data.firstSection[0].reference.content.childMarkdownRemark.htmlAst.children[0].children[0].value}
-                      <Link to="www.unigamer.com">www.unigamer.com</Link>
+                      <Link to="https://www.unigamer.com">www.unigamer.com</Link>
                     </div>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ const PostsL = ({ node }) => {
             {/* Right Post Block */}
             <div className="col-10 pt-1 pr-2 pl-2">
               {/* Post Author Top */}
-              <Link to="www.unigamer.com" className="text-bold text-dark mr-1">{node.author.name}</Link>
+              <a href="https://www.unigamer.com" className="text-bold text-dark mr-1">{node.author.name}</a>
               <i className="green font-15 fas fa-badge-check"></i> <span className="text-muted atspacing tiny" href="#">@{node.author.slug}</span>
              
               <div className="flex items-center text-muted space-x-2 tiny">  <span className="mr-1"> {node.publicationDate}</span>
@@ -175,7 +175,7 @@ const PostsR = ({ node }) => {
           {/* Right Post Block */}
           <div className="col-10 pt-1 pr-2 pl-2">
             {/* Post Author Top */}
-            <Link to="www.unigamer.com" className="text-bold text-dark mr-1">{node.author.name}</Link>
+            <a href="https://www.unigamer.com" className="text-bold text-dark mr-1">{node.author.name}</a>
             <i className="green font-15 fas fa-badge-check"></i> <span className="text-muted atspacing tiny" href="#">@{node.author.slug}</span>
            
             <div className="flex items-center text-muted space-x-2 tiny">  <span className="mr-1"> {node.publicationDate}</span>

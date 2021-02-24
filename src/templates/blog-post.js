@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 //import { BLOCKS } from '@contentful/rich-text-types';
 import { Link } from "gatsby"
-
+import Helmet from "react-helmet"
 
 const BlogPost = props  => {
 
@@ -21,6 +21,12 @@ const BlogPost = props  => {
 
     return (
       <Layout>
+      <Helmet>
+
+        <title>Unigamer Media - All the latest news</title>
+          <meta name="description" content={data.metaDescription.metaDescription}/>
+      </Helmet>
+
             {/* First Section */}
             <div className="container mt-5 py-5 pl-3">
                 <div className="row">
@@ -115,6 +121,9 @@ export default BlogPost
 export const pageQuery = graphql`
   query blogPostQuery($slug: String!) {
     contentfulPageBlogPost(slug: { eq: $slug }) {
+        metaDescription {
+            metaDescription
+        }
         title
         slug
         publicationDate(formatString: "MMMM D, YYYY")
