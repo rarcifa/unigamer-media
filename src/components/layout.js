@@ -55,10 +55,10 @@ const Layout = ({ children }) => {
             </div>
             <div className="container pt-3 pb-5">
               <ul className="bd-footer-links ps-0 mb-3 ">
-                <li className="d-inline-block"><a href="https://github.com/twbs">Instagram</a></li>
-                <li className="d-inline-block ml-3"><a href="https://twitter.com/getbootstrap">Twitter</a></li>
-                <li className="d-inline-block ml-3"><a href="/docs/5.0/examples/">Facebook</a></li>
-                <li className="d-inline-block ml-3"><a href="/docs/5.0/about/overview/">Youtube</a></li>
+                <li className="d-inline-block"><a href="https://www.instagram.com/unigamer_official/">Instagram</a></li>
+                <li className="d-inline-block ml-3"><a href="https://twitter.com/unigamer_">Twitter</a></li>
+                <li className="d-inline-block ml-3"><a href="https://www.facebook.com/unigamerofficial/">Facebook</a></li>
+                <li className="d-inline-block ml-3"><a href="https://www.youtube.com/c/OfficialUnigamer">Youtube</a></li>
               </ul>
               <p className="mb-0 grey text-sm">Designed and built with all the love in the world by the <a href="https://wwww.unigamer.com">Unigamer</a> team with the support of <a href="https://www.ncirl.ie">National College of Ireland</a>.</p>
             </div>
