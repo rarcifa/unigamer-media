@@ -18,7 +18,9 @@ const Subpage = props  => {
                     </div>
                     <div className="col-7 mt-n2">
                         {/* Article Grid */}
-               
+                        <div className="row">
+                            {data.relatedMedia.map((edge, i) => 
+                            <Articles key={i} node={edge}/>
                             )}
                         </div>
                     </div>
