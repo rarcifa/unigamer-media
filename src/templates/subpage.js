@@ -10,7 +10,7 @@ const Subpage = props  => {
     const dataSection = props.data.contentfulPageFullPage
     return (
         <Layout>
-            {/* First Section */}
+            {/* First Section with changes */}
             <div className="container mt-5 py-5  pl-3">
                 <div className="row">
                     <div className="col-4">
@@ -18,12 +18,11 @@ const Subpage = props  => {
                     </div>
                     <div className="col-7 mt-n2">
                         {/* Article Grid */}
-                        <div className="row">
-                            {data.relatedMedia.map((edge, i) => 
-                            <Articles key={i} node={edge}/>
+               
                             )}
                         </div>
                     </div>
+
                     <div className="col-1">
                         
                     </div>                 
