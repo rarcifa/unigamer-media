@@ -19,7 +19,8 @@ const Subpage = props  => {
                     <div className="col-7 mt-n2">
                         {/* Article Grid */}
                         <div className="row">
-                            {data.relatedMedia.map((edge, i) => 
+                        {data.relatedMedia.sort((a, b) => b.date > a.date ? 1 : -1).map((edge, i) => 
+  
                             <Articles key={i} node={edge}/>
                             )}
                         </div>
@@ -84,6 +85,7 @@ query categoryQuery($slug: String!) {
                 title
             }
             title
+            date: publicationDate
             publicationDate(formatString: "dddd, Do MMMM YYYY")
             author {
                 avatar {
