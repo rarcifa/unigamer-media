@@ -10,7 +10,7 @@ const Subpage = props  => {
     const dataSection = props.data.contentfulPageFullPage
     return (
         <Layout>
-            {/* First Section with changes */}
+            {/* First Section */}
             <div className="container mt-5 py-5  pl-3">
                 <div className="row">
                     <div className="col-4">
@@ -19,12 +19,13 @@ const Subpage = props  => {
                     <div className="col-7 mt-n2">
                         {/* Article Grid */}
                         <div className="row">
-                            {data.relatedMedia.map((edge, i) => 
+
+                        {data.relatedMedia.sort((a, b) => b.date > a.date ? 1 : -1).map((edge, i) => 
+  
                             <Articles key={i} node={edge}/>
                             )}
                         </div>
                     </div>
-
                     <div className="col-1">
                         
                     </div>                 
@@ -85,6 +86,7 @@ query categoryQuery($slug: String!) {
                 title
             }
             title
+            date: publicationDate
             publicationDate(formatString: "dddd, Do MMMM YYYY")
             author {
                 avatar {
